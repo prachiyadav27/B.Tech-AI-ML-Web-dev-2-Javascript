@@ -8,7 +8,7 @@
 // // remove element
 // document.querySelector("#content p").remove()
 
-// const image = document.getElementById("img");
+const image = document.getElementById("img");
 // to add and set the attribute in the tag
 image.setAttribute("src","https://media.istockphoto.com/id/1354259673/vector/scary-face-ghost-on-dark-background.jpg?s=612x612&w=0&k=20&c=clqShPDyICDDBeF60d_OveuJmCRdAoRc3jVj5lNdJ_I=")
 
@@ -16,3 +16,24 @@ image.setAttribute("alt","Javascript")
 
 
 const gallery = document.getdocumentById("gallery");
+gallery.appendChild(image);
+
+let date = new Date();
+console.log(date)
+
+setInterval(()=> {
+    
+let date = new Date();
+console.log(date);
+let hour = date.getHours();
+let min = date.getMinute();
+let second = date.getSeconds();
+
+const clock = document.getElementById
+("digi-clock");
+clock.textContent=hour+":"+"min+"+"+second";
+clock.textContent='${hour}:${min}:${second}';
+
+
+},1000)
+
